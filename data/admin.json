@@ -1,0 +1,10 @@
+{
+  "adminUsers": [],
+  "maintenanceMode": false,
+  "systemStats": {
+    "startTime": 1757129970252,
+    "commandsExecuted": 8,
+    "errorsCount": 2,
+    "filesProcessed": 0
+  }
+}

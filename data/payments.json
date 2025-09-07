@@ -1,0 +1,66 @@
+{
+  "paymentMethods": [
+    [
+      "paypal",
+      {
+        "id": "paypal",
+        "name": "PayPal",
+        "nameEn": "PayPal",
+        "icon": "💳",
+        "active": true,
+        "details": {
+          "email": "payments@fsprotect.com",
+          "instructions": "Envoyez le paiement à payments@fsprotect.com avec votre ID Discord en référence",
+          "instructionsEn": "Send payment to payments@fsprotect.com with your Discord ID as reference"
+        }
+      }
+    ],
+    [
+      "crypto",
+      {
+        "id": "crypto",
+        "name": "Cryptomonnaie",
+        "nameEn": "Cryptocurrency",
+        "icon": "₿",
+        "active": true,
+        "details": {
+          "address": "bc1qexampleaddress123456789",
+          "instructions": "Envoyez le montant en Bitcoin à l'adresse ci-dessus",
+          "instructionsEn": "Send the amount in Bitcoin to the address above"
+        }
+      }
+    ],
+    [
+      "bank",
+      {
+        "id": "bank",
+        "name": "Virement Bancaire",
+        "nameEn": "Bank Transfer",
+        "icon": "🏦",
+        "active": true,
+        "details": {
+          "iban": "FR76 1234 5678 9012 3456 789",
+          "bic": "EXAMPLE123",
+          "instructions": "Effectuez un virement avec votre ID Discord en référence",
+          "instructionsEn": "Make a transfer with your Discord ID as reference"
+        }
+      }
+    ],
+    [
+      "pcs",
+      {
+        "id": "pcs",
+        "name": "Carte PCS",
+        "nameEn": "PCS Card",
+        "icon": "💳",
+        "active": true,
+        "details": {
+          "instructions": "Contactez un administrateur pour les détails PCS",
+          "instructionsEn": "Contact an administrator for PCS details"
+        }
+      }
+    ]
+  ],
+  "pendingPayments": [],
+  "paymentHistory": []
+}

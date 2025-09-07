@@ -1,0 +1,355 @@
+{
+  "bot": {
+    "token": "MTQxMzY3MTIxNzQ3MDI0MjkwNg.GsiN2Z.9dcZVxXBbRUq9Kcultpmrsw7tVldia932K-K88",
+    "clientId": "1413671217470242906",
+    "guildId": "1413657099832918018",
+    "ownerId": "1306267120316710985",
+    "roles": {
+      "admin": {
+        "id": null,
+        "name": "Admin",
+        "color": "#ff0000"
+      },
+      "moderator": {
+        "id": null,
+        "name": "Modérateur",
+        "color": "#00ff00"
+      },
+      "french": {
+        "id": null,
+        "name": "Français",
+        "color": "#0099ff"
+      },
+      "english": {
+        "id": null,
+        "name": "English",
+        "color": "#0099ff"
+      }
+    },
+    "prefix": "!",
+    "presence": {
+      "status": "online",
+      "activity": {
+        "type": "WATCHING",
+        "name": "🛡️ FS Protect - Obfuscation FiveM"
+      }
+    },
+    "commands": {
+      "crypter": {
+        "name": "crypter",
+        "description": "Crypter un fichier ZIP (DM uniquement)",
+        "category": "Cryptage",
+        "cooldown": 10
+      },
+      "addaccess": {
+        "name": "addaccess",
+        "description": "Donner accès au bot de cryptage",
+        "category": "Admin",
+        "permission": "ADMINISTRATOR"
+      },
+      "removeaccess": {
+        "name": "removeaccess", 
+        "description": "Retirer l'accès au bot de cryptage",
+        "category": "Admin",
+        "permission": "ADMINISTRATOR"
+      },
+      "help": {
+        "name": "help",
+        "description": "Aide et utilisation du bot",
+        "category": "Information"
+      },
+      "status": {
+        "name": "status",
+        "description": "Statut du bot et informations",
+        "category": "Information"
+      },
+      "support": {
+        "name": "support",
+        "description": "Contacter le support",
+        "category": "Support"
+      }
+    }
+  },
+  
+  "database": {
+    "type": "json",
+    "path": "./data/database.json",
+    "backupInterval": 3600000,
+    "maxBackups": 10
+  },
+  
+  "obfuscation": {
+    "tempPath": "./temp/",
+    "maxFileSize": 52428800,
+    "maxArchiveSize": 209715200,
+    "allowedExtensions": [".lua", ".txt", ".js"],
+    "presets": {
+      "basic": {
+        "name": "Basic",
+        "description": "Obfuscation basique pour débutants",
+        "techniques": ["rename", "encode_strings", "add_junk"]
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Obfuscation avancée multi-couches",
+        "techniques": ["rename", "encode_strings", "ast_manipulation", "control_flow", "string_encryption"]
+      },
+      "vip": {
+        "name": "VIP Ultra",
+        "description": "Protection maximale avec techniques quantiques",
+        "techniques": ["all"]
+      }
+    }
+  },
+  
+  "access": {
+    "levels": {
+      "basic": {
+        "name": "Basic",
+        "maxFiles": 5,
+        "maxFileSize": 1048576,
+        "presets": ["basic"],
+        "cooldown": 300000
+      },
+      "premium": {
+        "name": "Premium",
+        "maxFiles": 50,
+        "maxFileSize": 10485760,
+        "presets": ["basic", "premium"],
+        "cooldown": 60000
+      },
+      "vip": {
+        "name": "VIP",
+        "maxFiles": -1,
+        "maxFileSize": 52428800,
+        "presets": ["basic", "premium", "vip"],
+        "cooldown": 0
+      }
+    },
+    "defaultLevel": "basic"
+  },
+  
+  "tickets": {
+    "categoryId": "1413657099832918019",
+    "supportRoleId": "1413657099832918020",
+    "staffRoleId": "1413657099832918021",
+    "adminRoleId": "1413657099832918022",
+    "logChannelId": "1413657099832918023",
+    "maxTicketsPerUser": 3,
+    "autoCloseHours": 72,
+    "enableTranscripts": true,
+    "enableClaiming": true,
+    "enableRating": true
+  },
+  
+  "antispam": {
+    "enabled": true,
+    "maxMessages": 5,
+    "timeWindow": 10000,
+    "warningThreshold": 3,
+    "muteTime": 300000,
+    "autoActions": {
+      "warn": true,
+      "timeout": true,
+      "kick": false,
+      "ban": false
+    },
+    "antiLink": {
+      "enabled": true,
+      "allowedDomains": ["discord.gg", "github.com", "docs.fivem.net"],
+      "blockedDomains": ["bit.ly", "tinyurl.com"],
+      "whitelistedChannels": []
+    },
+    "autoMod": {
+      "enabled": true,
+      "filterProfanity": true,
+      "filterInvites": true,
+      "filterMentionSpam": true,
+      "maxMentions": 5,
+      "filterCapsSpam": true,
+      "capsThreshold": 0.7
+    }
+  },
+  
+  "admin": {
+    "superAdmins": ["1413657099832918024"],
+    "admins": ["1413657099832918025"],
+    "moderators": ["1413657099832918026"],
+    "maintenanceMode": false,
+    "maintenanceReason": "",
+    "allowedCommands": {
+      "maintenance": ["admin", "superAdmin"],
+      "backup": ["admin", "superAdmin"],
+      "ban": ["moderator", "admin", "superAdmin"],
+      "access": ["admin", "superAdmin"]
+    }
+  },
+  
+  "logging": {
+    "level": "info",
+    "enableConsole": true,
+    "enableFile": true,
+    "enableDiscord": true,
+    "enableWebhook": true,
+    "maxFileSize": 10485760,
+    "maxFiles": 5,
+    "rotation": {
+      "enabled": true,
+      "schedule": "0 0 * * *"
+    },
+    "webhooks": {
+      "error": "https://discord.com/api/webhooks/error",
+      "audit": "https://discord.com/api/webhooks/audit",
+      "security": "https://discord.com/api/webhooks/security"
+    },
+    "channels": {
+      "error": "1413657099832918027",
+      "audit": "1413657099832918028",
+      "security": "1413657099832918029",
+      "general": "1413657099832918030"
+    }
+  },
+  
+  "security": {
+    "rateLimiting": {
+      "enabled": true,
+      "windowMs": 900000,
+      "maxRequests": 100,
+      "message": "Trop de requêtes, veuillez réessayer plus tard."
+    },
+    "encryption": {
+      "algorithm": "aes-256-gcm",
+      "keyLength": 32,
+      "ivLength": 16
+    },
+    "validation": {
+      "strictMode": true,
+      "sanitizeInputs": true,
+      "maxInputLength": 2000
+    },
+    "monitoring": {
+      "enabled": true,
+      "alertThreshold": 10,
+      "alertCooldown": 1800000
+    }
+  },
+  
+  "performance": {
+    "caching": {
+      "enabled": true,
+      "ttl": 3600000,
+      "maxEntries": 1000
+    },
+    "compression": {
+      "enabled": true,
+      "level": 6,
+      "threshold": 1024
+    },
+    "monitoring": {
+      "enabled": true,
+      "slowQueryThreshold": 1000,
+      "memoryThreshold": 80
+    }
+  },
+  
+  "api": {
+    "enabled": false,
+    "port": 3000,
+    "host": "localhost",
+    "cors": {
+      "enabled": true,
+      "origin": ["http://localhost:3000"],
+      "credentials": true
+    },
+    "auth": {
+      "enabled": true,
+      "secret": "VOTRE_JWT_SECRET",
+      "expiresIn": "7d"
+    },
+    "rateLimit": {
+      "windowMs": 900000,
+      "maxRequests": 1000
+    }
+  },
+  
+  "features": {
+    "webDashboard": false,
+    "statistics": true,
+    "backups": true,
+    "maintenance": true,
+    "notifications": true,
+    "analytics": false,
+    "premium": true
+  },
+  
+  "notifications": {
+    "discord": {
+      "enabled": true,
+      "channels": {
+        "status": null,
+        "errors": null,
+        "updates": null
+      }
+    },
+    "email": {
+      "enabled": false,
+      "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "auth": {
+          "user": "votre-email@gmail.com",
+          "pass": "votre-mot-de-passe"
+        }
+      },
+      "from": "FSProtect Bot <noreply@fsprotect.com>",
+      "recipients": []
+    }
+  },
+  
+  "integrations": {
+    "github": {
+      "enabled": false,
+      "token": "",
+      "webhook": ""
+    },
+    "patreon": {
+      "enabled": false,
+      "clientId": "",
+      "clientSecret": "",
+      "webhook": ""
+    },
+    "paypal": {
+      "enabled": false,
+      "clientId": "",
+      "clientSecret": "",
+      "webhook": ""
+    }
+  },
+  
+  "backup": {
+    "enabled": true,
+    "interval": 86400000,
+    "retention": 30,
+    "compression": true,
+    "destinations": {
+      "local": {
+        "enabled": true,
+        "path": "./backups/"
+      },
+      "cloud": {
+        "enabled": false,
+        "provider": "aws|gcp|azure",
+        "config": {}
+      }
+    }
+  },
+  
+  "development": {
+    "debug": false,
+    "verbose": false,
+    "hotReload": false,
+    "testMode": false,
+    "mockData": false
+  }
+}

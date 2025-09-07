@@ -1,0 +1,193 @@
+{
+  "commands": {
+    "obfuscate": {
+      "name": "obfuscate",
+      "description": "Obfuscate a Lua file",
+      "file_option": "Lua file to obfuscate",
+      "preset_option": "Obfuscation preset to use",
+      "success": "File obfuscated successfully!",
+      "error": "Error during obfuscation: {error}",
+      "processing": "🔄 Obfuscation in progress... Please wait.",
+      "no_access": "❌ You don't have access to this feature. Use `/pricing` to see our plans."
+    },
+    "price": {
+      "name": "pricing",
+      "description": "View prices and subscriptions",
+      "title": "💎 FSProtect Pricing",
+      "basic": "🆓 Basic - Free",
+      "premium": "💎 Premium - $9.99/month",
+      "vip": "👑 VIP - $19.99/month",
+      "enterprise": "🏢 Enterprise - Custom quote"
+    },
+    "help": {
+      "name": "help",
+      "description": "Show bot help",
+      "title": "📖 FSProtect Help",
+      "categories": "Available categories"
+    },
+    "language": {
+      "name": "language",
+      "description": "Change bot language",
+      "option": "New language",
+      "changed": "✅ Language changed to {language}",
+      "invalid": "❌ Unsupported language. Available: Français, English"
+    }
+  },
+  "system": {
+    "maintenance": "🚧 Bot is in maintenance mode. Reason: {reason}",
+    "error": "❌ An error occurred. Please try again.",
+    "no_permission": "❌ You don't have permission to use this command.",
+    "cooldown": "⏰ Please wait {time} before using this command again.",
+    "loading": "⏳ Loading...",
+    "success": "✅ Operation successful!",
+    "cancelled": "❌ Operation cancelled."
+  },
+  "moderation": {
+    "ban": {
+      "name": "ban",
+      "description": "Ban a user",
+      "user_option": "User to ban",
+      "reason_option": "Ban reason",
+      "success": "🔨 {user} has been banned successfully!",
+      "error": "❌ Cannot ban this user.",
+      "dm_message": "You have been banned from **{guild}** for: {reason}"
+    },
+    "kick": {
+      "name": "kick",
+      "description": "Kick a user",
+      "success": "👢 {user} has been kicked successfully!",
+      "dm_message": "You have been kicked from **{guild}** for: {reason}"
+    },
+    "mute": {
+      "name": "mute",
+      "description": "Mute a user",
+      "duration_option": "Mute duration",
+      "success": "🔇 {user} has been muted for {duration}",
+      "dm_message": "You have been muted on **{guild}** for: {reason}"
+    },
+    "warn": {
+      "name": "warn",
+      "description": "Warn a user",
+      "success": "⚠️ {user} received a warning ({count}/5)",
+      "dm_message": "You received a warning on **{guild}** for: {reason}"
+    },
+    "slowmode": {
+      "name": "slowmode",
+      "description": "Enable slow mode",
+      "duration_option": "Duration in seconds",
+      "success": "⏱️ Slow mode enabled: {duration} seconds",
+      "disabled": "✅ Slow mode disabled"
+    },
+    "lock": {
+      "name": "lock",
+      "description": "Lock a channel",
+      "success": "🔒 Channel locked successfully",
+      "already_locked": "⚠️ Channel is already locked"
+    },
+    "unlock": {
+      "name": "unlock",
+      "description": "Unlock a channel",
+      "success": "🔓 Channel unlocked successfully",
+      "not_locked": "⚠️ Channel is not locked"
+    }
+  },
+  "ai": {
+    "thinking": "🤔 Thinking... Analyzing your question.",
+    "error": "❌ Sorry, I can't respond right now. Please try again later.",
+    "no_question": "❓ Please ask a clear question.",
+    "help_categories": {
+      "fivem": "🎮 FiveM Questions",
+      "lua": "📝 Lua Programming",
+      "bot": "🤖 Bot Usage",
+      "general": "💬 General Questions",
+      "security": "🔐 Security and Protection"
+    }
+  },
+  "tickets": {
+    "create": {
+      "name": "create-ticket",
+      "description": "Create a support ticket",
+      "category_option": "Issue category",
+      "reason_option": "Problem description",
+      "success": "🎫 Ticket created successfully: {channel}",
+      "limit_reached": "⚠️ You have reached the open tickets limit (3 max)."
+    },
+    "close": {
+      "name": "close-ticket",
+      "description": "Close current ticket",
+      "reason_option": "Closing reason",
+      "success": "✅ Ticket closed successfully. Transcript saved.",
+      "not_ticket": "❌ This is not a ticket channel."
+    }
+  },
+  "stats": {
+    "title": "📊 FSProtect Statistics",
+    "server_info": "🏠 Server Information",
+    "bot_info": "🤖 Bot Information",
+    "usage": "📈 Usage",
+    "performance": "⚡ Performance",
+    "uptime": "Uptime",
+    "memory": "Memory usage",
+    "commands": "Commands executed",
+    "obfuscations": "Obfuscations completed"
+  },
+  "economy": {
+    "balance": "💰 Balance: {amount} credits",
+    "daily": "🎁 Daily reward claimed: +{amount} credits!",
+    "daily_claimed": "⏰ Daily reward already claimed today. Come back tomorrow!",
+    "shop": "🛒 FSProtect Shop - Buy upgrades",
+    "buy_success": "✅ Purchase successful! Enjoy your new item.",
+    "insufficient_funds": "❌ Insufficient credits for this purchase.",
+    "leaderboard": "🏆 Richest Users Leaderboard",
+    "rank": "Your rank",
+    "total_credits": "Total credits in circulation"
+  },
+  "pricing": {
+    "title": "💎 FSProtect Pricing & Subscriptions",
+    "compare": "📊 Compare plans",
+    "contact": "📞 Contact us",
+    "faq": "❓ Frequently asked questions",
+    "enterprise": "🏢 Enterprise solutions",
+    "student": "🎓 Student discount",
+    "testimonials": "⭐ Customer testimonials"
+  },
+  "security": {
+    "protection_levels": {
+      "basic": "🔒 Basic Protection - Standard obfuscation",
+      "advanced": "🛡️ Advanced Protection - Enhanced security",
+      "military": "⚔️ Military Protection - Ultimate security",
+      "custom": "🎯 Custom Protection - Tailored solution"
+    },
+    "features": {
+      "anti_debug": "Advanced anti-debugging",
+      "anti_vm": "Virtual machine detection",
+      "code_flow": "Code flow obfuscation",
+      "string_encryption": "String encryption",
+      "dead_code": "Dead code injection",
+      "control_flow": "Control flow obfuscation"
+    }
+  },
+  "notifications": {
+    "welcome": "👋 Welcome to FSProtect! Use `/help` to get started.",
+    "upgrade": "⭐ Upgrade to Premium to unlock all features!",
+    "maintenance": "🚧 Scheduled maintenance in 5 minutes.",
+    "new_feature": "🆕 New feature available!",
+    "security_alert": "🚨 Security alert: Suspicious activity detected."
+  },
+  "errors": {
+    "file_too_large": "📦 File too large. Maximum size: {size}",
+    "file_invalid": "📄 Unsupported file format. Use .lua or .zip",
+    "rate_limit": "⏱️ Too many requests. Wait {time} seconds.",
+    "server_error": "🔧 Server error. Our team has been notified.",
+    "user_banned": "🚫 You are banned from this service.",
+    "feature_disabled": "⚙️ This feature is temporarily disabled."
+  },
+  "success": {
+    "obfuscation_complete": "🎉 Obfuscation complete! Your script is now protected.",
+    "payment_success": "💳 Payment successful! Your subscription is now active.",
+    "ticket_created": "🎫 Ticket created! Our team will respond quickly.",
+    "settings_saved": "⚙️ Settings saved successfully.",
+    "backup_created": "💾 Backup created successfully.",
+    "user_promoted": "⬆️ User promoted successfully!"
+  }
+}
